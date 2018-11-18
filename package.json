@@ -1,0 +1,26 @@
+{
+  "name": "bit-campus-network-cli",
+  "version": "1.0.0",
+  "description": "BIT Campus network CLI",
+  "main": "BITCampus.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiJinyao/BIT-campus-network-CLI.git"
+  },
+  "keywords": [
+    "BIT",
+    "network"
+  ],
+  "author": "Li Jinyao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LiJinyao/BIT-campus-network-CLI/issues"
+  },
+  "bin": {
+    "BIT": "./BIT.js"
+  },
+  "homepage": "https://github.com/LiJinyao/BIT-campus-network-CLI#readme"
+}
