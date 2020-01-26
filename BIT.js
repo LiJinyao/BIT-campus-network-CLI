@@ -6,9 +6,9 @@ function printHelp() {
     console.log(`
     用法
     登陆：
-    node index.js login your-account
+    node BIT.js login your-account [password]
     注销：
-    node index.js logout your-account
+    node BIT.js logout your-account
     `)
 }
 
@@ -51,12 +51,17 @@ async function getPassword(prompt) {
 }
 
 async function exec(args) {
-    if(args.length !== 4) {
+    if(args.length < 4) {
         printHelp()
     }
     switch (args[2]) {
         case 'login':
-            const password = await getPassword('Password: ')
+            let password;
+            if(args.length > 4) {
+                password = args[4]
+            } else {
+                password = await getPassword('Password: ')
+            }
             const loginResponse = await login(args[3], password)
             if(loginResponse.suc_msg === 'login_ok') {
                 console.log(`login successfully`)
