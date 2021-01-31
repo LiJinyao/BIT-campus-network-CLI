@@ -11,7 +11,7 @@ function printHelp() {
     node BIT.js logout your-account
     `)
 }
-
+/////
 async function getPassword(prompt) {
     process.stdout.write(prompt)
     return new Promise((resolve, reject) => {

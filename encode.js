@@ -1,6 +1,7 @@
 /**
  * A custom encode function grab from login page.
  */
+ /**/
 function encode( str, key ) {
     if(str=="") {
         return "";
